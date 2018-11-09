@@ -1,0 +1,63 @@
+{
+  "name": "@fullpage/react-fullpage",
+  "version": "0.1.2",
+  "description": "Official react wrapper for fullPage.js",
+  "author": "cmswalker",
+  "contributors": [
+    "cmswalker",
+    "alvarotrigo"
+  ],
+  "main": "./dist/react-fullpage.js",
+  "license": "MIT",
+  "homepage": "https://github.com/alvarotrigo/react-fullpage",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
+    "build": "webpack -p --progress --mode production --config webpack.config.build.js",
+    "test": "npx cypress run --spec 'cypress/integration/*'",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarotrigo/react-fullpage"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "0.1.19",
+    "cross-env": "5.1.6",
+    "css-loader": "0.28.11",
+    "cypress": "^3.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-cypress": "^2.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "1.1.11",
+    "html-webpack-plugin": "3.2.0",
+    "node-sass": "^4.10.0",
+    "prettier-eslint": "^8.8.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "sass-loader": "7.0.2",
+    "style-loader": "0.21.0",
+    "url-loader": "1.0.1",
+    "webpack": "4.10.2",
+    "webpack-cli": "3.0.1",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "4.1.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "@material-ui/core": "^3.4.0",
+    "@material-ui/icons": "^3.0.1",
+    "fullpage.js": "^3.0.3",
+    "react-icons": "^3.2.2",
+    "react-slideshow-image": "^1.0.8"
+  }
+}

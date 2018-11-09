@@ -1,0 +1,33 @@
+.react-slideshow-wrapper .images-wrap * {
+    height: 70vh;
+    div{
+        background-position: center;
+        background-size: cover;
+    }
+}
+.react-slideshow-container + div.indicators{
+    z-index: 20;
+    position: relative;
+    top: -150px;
+}
+
+.react-slideshow-container + div.indicators > div{
+    background: rgba(255,255,255, 0.5);
+    width: 15px;
+    height: 15px;
+    transition: 0.5s;
+}
+
+.react-slideshow-container + div.indicators > div.active{
+    width: 20px;
+    height: 20px;
+    transition: 0.5s;
+    background: gray;
+}
+
+.header--menu{
+    li{
+        display: inline-block;
+
+    }
+}
